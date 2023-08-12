@@ -3,10 +3,10 @@ import NavigationBar from "../Components/NavigationBar";
 
 function RootLayout() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen sm:grid sm:grid-cols-[auto_1fr] w-full">
       <NavigationBar />
 
-      <div className="container mx-auto p-2 flex justify-center items-center">
+      <div className="p-2 overflow-x-auto">
         <Outlet />
       </div>
     </div>
